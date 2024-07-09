@@ -12,10 +12,7 @@ export default function App({ Component, pageProps }) {
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
 
-  function getRandomPiece(pieces) {
-    const randomPiece = Math.floor(Math.random() * pieces.length);
-    return pieces[randomPiece];
-  }
+  const randomPiece = Math.floor(Math.random() * data.length);
 
   return (
     <>
@@ -23,7 +20,7 @@ export default function App({ Component, pageProps }) {
         <Component
           {...pageProps}
           pieces={data}
-          RandomPiece={getRandomPiece(data)}
+          RandomPiece={randomPiece}
           />
           <Layout>
       </Layout>

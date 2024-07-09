@@ -5,7 +5,7 @@ export default function Spotlight({ RandomPiece }) {
     <div>
       <Image
         src={RandomPiece.imageSource}
-        alt={RandomPiece.artist}
+        alt={RandomPiece.name}
         width={400}
         height={200}
       />
