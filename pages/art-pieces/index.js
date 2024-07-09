@@ -1,11 +1,16 @@
-import ArtPieces from "@/components/ArtPieces";
+import ArtPiecePreview from "@/components/ArtPiecePreview";
+import Link from "next/link";
 
-
-export default function List({ pieces, RandomPiece }) {
+export default function List({ pieces }) {
   return (
-    <>
-      <h1>Art List</h1>
-      <ArtPieces pieces={pieces} RandomPiece={RandomPiece} />
-    </>
+    <ul>
+      {pieces.map((piece) => (
+        <li key={piece.slug}>
+          <Link href={`/art-pieces/${piece.slug}`}>
+          <ArtPiecePreview piece={piece} />
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }
