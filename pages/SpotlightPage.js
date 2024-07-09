@@ -1,11 +1,11 @@
 
 import Spotlight from "@/components/Spotlight";
 
-export default function SpotlightPage({RandomPiece }) {
+export default function SpotlightPage({pieces}) {
   return (
     <>
       <h1>Random Art</h1>
-      <Spotlight RandomPiece={RandomPiece} />
+      <Spotlight pieces={pieces} />
     </>
   );
 }

@@ -5,7 +5,7 @@ export default function ArtPiecePreview({piece}) {
   return (
     <div>
       <Image width={200} height={140} src={piece.imageSource} alt={piece.name} />
-      <h2>{piece.name}</h2>
+      <h4>{piece.name}</h4>
       <p>{piece.artist}</p>
     </div>
   );
