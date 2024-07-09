@@ -1,10 +1,15 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-export default function Spotlight({ image, artist }){
+export default function Spotlight({ RandomPiece }) {
   return (
     <div>
-      <Image src={image} alt={artist} width={400} height={200}/>
-      <p>{artist}</p>
+      <Image
+        src={RandomPiece.imageSource}
+        alt={RandomPiece.artist}
+        width={400}
+        height={200}
+      />
+      <p>{RandomPiece.artist}</p>
     </div>
   );
-};
+}
