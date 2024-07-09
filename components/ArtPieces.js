@@ -11,7 +11,7 @@ export default function ArtPieces({ pieces }) {
           artist={piece.artist}
         />
       </li>
-    ))}
+     ))}
   </ul>
   );
 }
