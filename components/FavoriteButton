@@ -1,0 +1,10 @@
+import HeartIcon from '../public/images/heart.svg';
+
+export default function FavoriteButton({ isFavorite}) {
+  return (
+    
+    <HeartIcon width={32} fill={isFavorite ? "red" : "black"}
+ 
+
+  );
+}
